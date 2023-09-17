@@ -190,8 +190,7 @@ Dari tabel di atas, dapat terlihat bahwa nilai AIC terendah didapat ketika $p=15
 model.ardl <- ardlDlm(x = train$Xt, y = train$Yt, p = 15 , q = 5)
 summary(model.ardl)
 ```
-#BLOMFIXXXXX
-Terdapat 2 peubah yang berpengaruh signifikan terhadap nilai $AQI$ pada selang kepercayaan 95% yaitu $X_{t}$, Y_{t-1}$dan $Y_{t-2}$. Artinya, menurut model ARDL dengan $p=15$ dan $q=5$, nilai AQI saat ini dipengaruhi oleh kandungan $pm25$ pada saat ini, 1 hari sebelum, serta 2 hari sebelumnya. Model ini cukup baik dengan nilai R-Square sebesar 96.04%. Model keseluruhannya adalah sebagai berikut:
+Terdapat 3 peubah yang berpengaruh signifikan terhadap nilai $AQI$ pada selang kepercayaan 95% yaitu $X_{t}$, Y_{t-1}$dan $Y_{t-2}$. Artinya, menurut model ARDL dengan $p=15$ dan $q=5$, nilai AQI saat ini dipengaruhi oleh kandungan $pm25$ pada saat ini dan dipengaruhi oleh kandungan $AQI$  1 hari sebelum, serta 2 hari sebelumnya. Model ini cukup baik dengan nilai R-Square sebesar 96.04%. Model keseluruhannya adalah sebagai berikut:
 
 $$
 \hat{Y}= 6.39323-9.79936 7X_t+12.55109 X_{t-1}+...-0.21285Y_{t-4} -0.33394Y_{t-5}
