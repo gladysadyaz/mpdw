@@ -424,7 +424,7 @@ Korelasi antara $Y_t$ dengan $Y_{t-2}$ dari hasil simulasi adalah 0.7278848
 #### Korelasi antara $Y_t$ dengan $Y_{t-3}$
 
 ```{r}
-set.seed(1026)
+set.seed(1014)
 #Yt
 yt_arma <- arma22[-c(1,2,3)]
 yt_arma
