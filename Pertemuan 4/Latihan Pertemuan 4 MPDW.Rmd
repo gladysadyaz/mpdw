@@ -109,7 +109,7 @@ Korelasi antara $Y_t$ dengan $Y_{t-2}$ dari hasil simulasi yaitu 0.4140534
 #Yt
 yt_ma3 <- ma[-c(1,2,3)]
 yt_ma3
-#Yt-2
+#Yt-3
 yt_3_ma <- ma[-c(298,299,300)]
 yt_3_ma
 plot(y=yt_ma3,x=yt_3_ma)
@@ -222,7 +222,7 @@ Korelasi antara $Y_t$ dengan $Y_{t-2}$ dari hasil simulasi yaitu 0.4297622
 #Yt
 yt_ar3 <- ar[-c(1,2,3)]
 yt_ar3
-#Yt-2
+#Yt-3
 yt_3_ar <- ar[-c(298,299,300)]
 yt_3_ar
 plot(y=yt_ar3,x=yt_3_ar)
